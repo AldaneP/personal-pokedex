@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+}
+
+.logo {
+  height: 100px;
+  width: 130px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 15px;
+
+}
+
+.logo2 {
+  height: 114px;
+  width: 130px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 15px;
+
+}
+
+.logo:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.logo2:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+ul li a {
+  display: inline;
+  padding: 0 1.0%;
+  font-size: 25px;
+}
+
+#navbar {
+  background: black;
+  padding: 1% 2%;
+  positionL fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+#navbar ul li {
+  display: inline;
+  padding: 0 3.5%;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+}
