@@ -1,8 +1,14 @@
 body {
-  margin: 0;
+  background-image: url('https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png');
 }
 
-.logo {
+h1 {
+ padding: 50px;
+ text-align: center;
+ background: #FFCB05;
+}
+
+/* .logo {
   height: 100px;
   width: 130px;
   display: inline-block;
@@ -18,9 +24,9 @@ body {
   border-radius: 50%;
   margin: 15px;
 
-}
+} */
 
-.logo:hover {
+/* .logo:hover {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
@@ -28,28 +34,33 @@ body {
 .logo2:hover {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+} */
+
+#navbar {
+  background: #FF0000;
+  border:1px solid #FF0000;
+  border-width:6px 0;
+  margin:0;
+  padding:0;
+  text-align: center;
+
+}
+
+.pklogo {
+  float: left;
+  height: 65px;
+  width: 80px;
+  display: flex;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+ul li {
+  display: inline;
+  padding: 2 3.5%;
 }
 
 ul li a {
-  display: inline;
-  padding: 0 1.0%;
-  font-size: 25px;
-}
-
-#navbar {
-  background: black;
-  padding: 1% 2%;
-  positionL fixed;
-  top: 0;
-  width: 100%;
-
-}
-
-#navbar ul li {
-  display: inline;
-  padding: 0 3.5%;
-}
-
-#navbar ul li a {
   text-decoration: none;
+  padding: 35px 20px 20px;
 }
