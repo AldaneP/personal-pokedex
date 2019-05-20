@@ -4,44 +4,32 @@ body {
 
 h1 {
  padding: 50px;
- float: left;
+ /* float: left; */
  background: #FFCB05;
+ text-align: center;
 }
 
-/* .logo {
-  height: 100px;
-  width: 130px;
+.logo {
+  height: auto;
+  width: auto;
+  float: left;
   display: inline-block;
-  border-radius: 50%;
   margin: 15px;
 
 }
 
-.logo2 {
-  height: 114px;
-  width: 130px;
-  display: inline-block;
-  border-radius: 50%;
-  margin: 15px;
-
-} */
-
-/* .logo:hover {
+.logo:hover {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
-.logo2:hover {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-} */
 
 #navbar {
   background: #FF0000;
   border:1px solid #FF0000;
   border-width:6px 0;
   margin:0;
-  padding:64px;
+  padding:11px;
   text-align: center;
 
 }
