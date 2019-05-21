@@ -7,11 +7,12 @@ for (p in pokemon) {
   div.style.backgroundImage = `url('https://assets.pokemon.com/assets/cms2/img/pokedex/full/${pokemon[p]}.png')`
   div.style.backgroundSize = 'contain'
   div.style.backgroundRepeat = 'no-repeat'
-  div.style.border = '1px solid black'
+  div.style.border = '1px solid red'
+  div.style.borderRadius = '50%'
   container.appendChild(div)
 
 }
 
 container.style.display = 'grid'
-container.style.gridTemplate = 'repeat(3, 300px) / repeat(3, 25%)'
+container.style.gridTemplate = 'repeat(3, 500px) / repeat(3, 33%)'
 container.style.gridGap = '1%'

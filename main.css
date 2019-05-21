@@ -41,5 +41,22 @@ ul li {
 
 ul li a {
   text-decoration: none;
-  padding: 35px 20px 20px;
+  padding: 15px 15px 15px;
+}
+
+.pokemaster {
+  display: grid;
+  grid-template: 100px / 450px 450px 450px;
+  grid-gap: '1%';
+}
+
+.poke-grid {
+  width: 297px;
+}
+
+
+
+h1 {
+  padding: 10px;
+  background-image: url('https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png');
 }
