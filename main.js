@@ -1,20 +1,25 @@
-z_pokemon = []
-
-class Pokemon {
-  constructor(hp, attack, defense, abilities) {
-  this.hp = hp
-  this.attack = attack
-  this.abilities = []
-}
-
-}
-
-
-
-
-
-
-
+// z_pokemon = []
+//
+// class Pokemon {
+//   constructor(hp, attack, defense, abilities) {
+//   this.hp = hp
+//   this.attack = attack
+//   this.abilities = []
+// }
+//
+// let Z = {
+//   pokemon: ["greninja", "infernape", "eevee"]
+// };
+//
+// let all = [, , ];
+// all.push();
+//
+// let get = [name];
+// get.push(name);
+//
+//
+//
+//
 // requestAPI = () => {
 //     var xhttp = new XMLHttpRequest();
 //     xhttp.onreadystatechange = function () {
@@ -29,7 +34,7 @@ class Pokemon {
 //             }
 //         }
 //     };
-//     xhttp.open("GET", " https://api.github.com/users/defunkt", true);
+//     xhttp.open("GET", " https://fizal.me/pokeapi/api/v2/id/<id>.json", true);
 //     xhttp.send();
 // }
 //
