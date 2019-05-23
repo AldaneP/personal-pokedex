@@ -15,7 +15,7 @@ console.log(pokemon)
 xhttp.open("GET", `https://pokeapi.co/api/v2/pokemon/${pokemon}/`, true);
 xhttp.send();
 }
-//
+
 requestAPI("greninja")
 
 
@@ -31,11 +31,18 @@ class Pokemon {
 
 class Zonal {
   constructor() {
-  this.all()
-  this.get(name)
-  pokemon = []
+  this.pokemon = []
   }
 }
+
+all() {
+  console.log(pokemon)
+}
+
+get(name) {
+  
+}
+
 
 
 //   const infernape = new Pokemon
