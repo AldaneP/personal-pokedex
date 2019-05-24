@@ -8,6 +8,7 @@ requestAPI = (pokemon) => {
   data["stats"][3]["base_stat"], data["abilities"][0]["ability"]["name"],
   data["abilities"][1]["ability"]["name"])
 
+  zonal.pokedex.push(pokemon);
 console.log(pokemon)
 
 }
@@ -16,7 +17,6 @@ xhttp.open("GET", `https://pokeapi.co/api/v2/pokemon/${pokemon}/`, true);
 xhttp.send();
 }
 
-requestAPI("greninja")
 
 
 class Pokemon {
@@ -28,100 +28,45 @@ class Pokemon {
     this.ability2 = ability2
   }
 }
+requestAPI("greninja")
+requestAPI("infernape")
+requestAPI("eevee")
 
 class Zonal {
   constructor() {
-  this.pokemon = []
-  }
+  this.pokedex = []
 }
 
-all() {
-  console.log(pokemon)
+  all() {
+  console.log(pokedex)
 }
 
 get(name) {
-  
+  return pokedex
+}
 }
 
+zonal = new Zonal
 
 
-//   const infernape = new Pokemon
-//
-//
-//
-// const infernape = new
-//
-      // console.log(data["stats"][5]["base_stat"])
-      // console.log(data["stats"][4]["base_stat"])
-      // console.log(data["stats"][3]["base_stat"])
-      // console.log(data["abilities"][0]["ability"]["name"])
-      // console.log(data["abilities"][1]["ability"]["name"])
-//
-//       let infernape = JSON.parse(this.responseText)
-//       console.log(data["stats"][5]["base_stat"])
-//       console.log(infer["stats"][4]["base_stat"])
-//       console.log(infernape["stats"][3]["base_stat"])
-//       console.log(infernape["abilities"][0]["ability"]["name"])
-//       console.log(infernape["abilities"][1]["ability"]["name"])
 
-//
-//
-//
-//
-//
-// displayUser = () => {
-//     let cont = document.createElement('div')
-//     let h1 = document.createElement('h1')
-//     let p1 = document.createElement('p')
-//     let img = document.createElement('img')
-//
-//     h1.innerText = user['name']
-//     p1.innerText = user['followers']
-//     img.setAttribute('src', user['image'])
-//     cont.appendChild(h1)
-//     cont.appendChild(p1)
-//     cont.appendChild(img)
-//     document.body.appendChild(cont)
-// }
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// // Const ALL_CARS = []
-// //   function loadDoc() {
-// //     var xhttp = new XMLHttpRequest(); // create and XHR object -- request object
-// //     xhttp.onreadystatechange = function() {
-// //       if (this.readyState == 4 && this.status == 200) { // everything takes place between this block, every thing in curly braces is considered a block
-// //         let data = JSON.parse(this.responseText)
-// //         for (item in data) {
-// //           let car = new Car(item,
-// //                             data[item].make
-// //                             data[item].model
-// //                             data[item].model_year
-// //                             data[item].color)
-// //            if (car.make =
-// //              cars_sorted[data[item].make] =
-// //
-// //         }
-// //        ;
-// //       }
-// //     };
-// //
-// //     xhttp.open("GET", "https://fizal.me/pokeapi/api/v2/id/<id>.json", true); // http verb, url
-// //     xhttp.send(); //invoke XHR request (putting parentheses)
-// //
-// // class Car {
-// //   constructor(vin, make, model, year, color) {
-// //   this.vin = vin
-// //   this.make = make
-// //   this.make = model
-// //   this.make = year
-// //   this.make = color
-// //
-// // }
-// // }
+
+// zonal.push("infernape");
+// zonal.push("eevee");
+
+
+
+displayUser = () => {
+    let cont = document.createElement('div')
+    let h1 = document.createElement('h1')
+    let p1 = document.createElement('p')
+    let img = document.createElement('img')
+
+    h1.innerText = user['name']
+    p1.innerText = user['followers']
+    img.setAttribute('src', user['image'])
+    cont.appendChild(h1)
+    cont.appendChild(p1)
+    cont.appendChild(img)
+    document.body.appendChild(cont)
+}
